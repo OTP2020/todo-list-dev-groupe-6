@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../helpers/drawer_navigation.dart';
 import '../screens/categorie_screen.dart';
 import '../screens/home_screen.dart';
 
@@ -10,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CategoriesScreen(),
+      home: DrawerNavigation(),
     );
   }
 }

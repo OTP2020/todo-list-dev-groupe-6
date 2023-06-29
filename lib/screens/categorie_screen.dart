@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_list/services/category_service.dart';
 
+import '../helpers/drawer_navigation.dart';
 import '../models/category.dart';
 import 'home_screen.dart';
 class CategoriesScreen extends StatefulWidget {
@@ -202,7 +203,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       appBar: AppBar(
         leading: ElevatedButton(
           onPressed: ()=>Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context)=>HomeScreen())),
+              .push(MaterialPageRoute(builder: (context)=>DrawerNavigation())),
           child: Icon(Icons.arrow_back),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.blue, // Background color
